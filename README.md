@@ -1,3 +1,3 @@
 #KOKOA CLONE 21 UPDATE
 
-CSS got so much better nomad
+HTML are CSS are so much fun!
