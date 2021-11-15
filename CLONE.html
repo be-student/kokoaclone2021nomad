@@ -5,9 +5,6 @@
         <title>home of my first website</title>
         
         <style> 
-        html{
-          background-color:tomato;
-        }
         body{
           margin:20px;/*상하, 좌우 상 우 아 왼순임 4개는*/
           background-color:thistle;
@@ -18,17 +15,33 @@
           collapsing margins. 위 아래에서만 이어남,
           내부 요소가 밖과 마진이 닿으면 같아져버림.  */
           /*이때문에 패딩이 나오게 됨.*/
-          margin:10px;
           
-          display:inline;
-          height:150px;
-          width:150px;
-          padding:10px;
+          
+          margin-top:10px;
+          padding:5px;
           background-color:white;
         }
-        #sec{
+        #fir{
           background-color:green;
+          height:150px;
+          width:150px;
         }
+        #sec{
+          background-color:blue;
+          width:100px;
+          height: 100px;
+        }
+        #thi{
+          background-color:blanchedalmond;
+          width:50px;
+          height: 50px;
+        }
+        #for{
+          background-color:purple;
+          width:25px;
+          height: 25px;
+        }
+        
         span{
           background-color:blue;
           display:block;/*이 부분이 inline,block 등 타입*/
@@ -39,20 +52,14 @@
         </style>
     </head>
     <body>
-      <div><div id="sec"><div>hello<br></div>hello<br></div>div never 
-      allow others to get next to it</div>
-      <span>hello</span>
-      <a href="#">link</a>
-      <p>
-        lorem 
-      </p>
-      <img src="img/coding.png">
-      div,address-block <>span,a,img-inline 
-      작은 단위는 inline 이 가능함. inline은 높이,길이 없음. 
-      block은 높이와 넓이 있음
-      span, a,img 는 inline기억하기. 나머지는 웬만하면 감이 옴
-      box margin, border,padding순으로 외곽
-      margin은 선택 영역 밖임
-      padding은 경계 안에 영역임. 
+      <div id="fir">
+        <div id="sec">
+          <div id="thi">
+            <div id="for">
+        
+            </div>
+          </div>
+        </div>
+      </div>
     </body>
 </html>
