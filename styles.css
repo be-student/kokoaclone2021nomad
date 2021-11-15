@@ -1,4 +1,4 @@
-/*selector { 태그:값}*/
-blueTitle {
-
+/*selector { 태그:body}*/
+body{
+    background-color:red;
 }
