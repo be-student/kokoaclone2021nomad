@@ -7,8 +7,18 @@
         <style> 
         body{
           margin:20px;
+
         }
-        span{
+        div{
+          display:inline-block;/*inline처럼 옆에 올 수 
+          있으면서 넓이 가짐 단 너무 구림. 마진 값을 
+          주지 않아도 틈이 생기는 등 여러 문제가 많음*/
+          width:300px;
+          height:300px;
+          background-color: teal;
+          margin-right:8px;
+        }
+        /*span{
           background-color:teal;
           
         }
@@ -17,7 +27,7 @@
         #tomato3{
           background-color:tomato;
         }
-        */
+        
         .tomato{
           background-color: tomato;
           color:white;
@@ -29,16 +39,23 @@
           padding: 5px 10px;
           border-radius:5px;
         }
+        */
         </style>
     </head>
     <body>
-      <span class="btn teal">hello</span>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <!--<span class="btn teal">hello</span>
       <span class="btn tomato">hello</span>
       <span class="btn teal">hello</span>
       <span class="btn tomato hello honey potato">hello</span>
       <span class="btn teal">hello</span>
       <span class="btn tomato">hello</span>
       상하 marign이 불가능함, 높이 너비가 없음inline
-      class 동시 여러개 가능 id 1개 unique
+      class 동시 여러개 가능 id 1개 unique-->
     </body>
 </html>
