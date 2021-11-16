@@ -6,38 +6,32 @@
         
         <style> 
         body{
-          height:100vh;
+          height:1000vh;
           margin:20px;
-          display:flex;
-          justify-content:center;
-          align-items: center;/*그냥 이렇게 해도 body높이가
-          작기 때문에 제대로 작동하지 않음. 따라서 높이 주기*/
-          flex-direction:row;
-          flex-wrap:wrap;/*기본 방식no, wrap은 1줄에 있게함*/
         }
         div{
-          display:flex;
-          justify-content:center;
-          align-items: center;
-          width:100px;
-          height:100px;
+          /*스크롤을 움직여도 고정됨 광고*/
+          width:300px;
+          height:300px;
           color:white;
-          font-size:30px;
           background-color: teal;
         }
-        #sec{
+        #diff{
+          top:5px;/*하나라도 수정하면 바로 앞에 있는 레이어로 가게 됨. */
+          left:200px;
+          position:fixed;
+          /*항상 제일 처음 나온 곳 기준으로 맞춰짐*/
           background-color: wheat;
+          width:350px;
+        }
+        #green{
+          position:fixed;
+          opacity:0.2;
         }
         </style>
     </head>
     <body>
-      <div>1</div>
-      <div id="sec">2</div>
-      <div>3</div>
-      <!--flex box에는 자식 엘리먼트에 말 하지 않고, 부모에만 함
-      예시로 위의div를 움직이려면 body에 display:flex말함.
-      1. main axis, cross axis/main은 가로cross 수직
-      justify-content =main, align-items=cross
-      방향을 바꾸려면 flex-direction:column하면 됨-->
+      <div id="green"></div>
+      <div id="diff"></div>
     </body>
 </html>
