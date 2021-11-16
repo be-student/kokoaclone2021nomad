@@ -6,56 +6,38 @@
         
         <style> 
         body{
+          height:100vh;
           margin:20px;
-
+          display:flex;
+          justify-content:center;
+          align-items: center;/*그냥 이렇게 해도 body높이가
+          작기 때문에 제대로 작동하지 않음. 따라서 높이 주기*/
+          flex-direction:row;
+          flex-wrap:wrap;/*기본 방식no, wrap은 1줄에 있게함*/
         }
         div{
-          display:inline-block;/*inline처럼 옆에 올 수 
-          있으면서 넓이 가짐 단 너무 구림. 마진 값을 
-          주지 않아도 틈이 생기는 등 여러 문제가 많음*/
-          width:300px;
-          height:300px;
-          background-color: teal;
-          margin-right:8px;
-        }
-        /*span{
-          background-color:teal;
-          
-        }
-        /*#tomato1,id 중복 처리
-        #tomato2,
-        #tomato3{
-          background-color:tomato;
-        }
-        
-        .tomato{
-          background-color: tomato;
+          display:flex;
+          justify-content:center;
+          align-items: center;
+          width:100px;
+          height:100px;
           color:white;
+          font-size:30px;
+          background-color: teal;
         }
-        .teal{
-          background-color:teal;
+        #sec{
+          background-color: wheat;
         }
-        .btn{
-          padding: 5px 10px;
-          border-radius:5px;
-        }
-        */
         </style>
     </head>
     <body>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <div></div>
-      <!--<span class="btn teal">hello</span>
-      <span class="btn tomato">hello</span>
-      <span class="btn teal">hello</span>
-      <span class="btn tomato hello honey potato">hello</span>
-      <span class="btn teal">hello</span>
-      <span class="btn tomato">hello</span>
-      상하 marign이 불가능함, 높이 너비가 없음inline
-      class 동시 여러개 가능 id 1개 unique-->
+      <div>1</div>
+      <div id="sec">2</div>
+      <div>3</div>
+      <!--flex box에는 자식 엘리먼트에 말 하지 않고, 부모에만 함
+      예시로 위의div를 움직이려면 body에 display:flex말함.
+      1. main axis, cross axis/main은 가로cross 수직
+      justify-content =main, align-items=cross
+      방향을 바꾸려면 flex-direction:column하면 됨-->
     </body>
 </html>
