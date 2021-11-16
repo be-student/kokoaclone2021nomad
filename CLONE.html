@@ -5,66 +5,78 @@
         <title>home of my first website</title>
         
         <style> 
+        :root{/*출발점이고 기본이 됨. */
+          --main-color:#fcce00;/*변수 역할을 함.*/
+          /*형식은 --변수이름*/
+          --defaultborder:1px solid var(--main-color)
+          /*css custom property*/
+        }
         body{
           height:1000px;
           margin:20px;
         }
-        span{
-          color:tomato;
-          background-color:yellowgreen;
+        input:active{
+          /*클릭 순간*/
         }
-        div>span{/*div 의 첫자식만 설정
-          이게 불가능함span:first-child*/
-          padding:5px;
-          border-radius: 10px;
-          text-decoration: underline;
+        input:focus{
+          background-color: purple;
         }
-        div p span{
+        a:visited{
+          background-color: tomato;
+        }
+        a:focus{
           color:teal;
         }
-        p+span{/*p 바로 다음에 나오는 span에 적용
-          진짜 바로 다음에 나와야 함*/
-          color:whitesmoke;
-        }
-        p~span{/*바로 다음은 아니지만 다음에 나오는 것*/
-          color:blueviolet;
-        }
-        /*span:last-child{
+        a:hover{
           color:teal;
         }
-        */
-        input{
-          border:1px solid wheat;
+        form{
+          border: 1px solid salmon;
+          display:flex;
+          flex-direction: column;
+          padding:20px;
         }
-        input:required{ /*attribute로 선택 하는 것*/
-          border:1px solid tomato;
+        form:focus-within{/*자식이 focus 되면 영향을 받는 코드*/
+          border-color:seagreen;
         }
-        input[placeholder="password"]{/*띄어쓰기 안됨*/
-          background-color:thistle;
+        form:hover input:focus{/*hover 상대가 되는 부모의 자식 input*/
+          background-color: white;
         }
-        input[placeholder*="name"]{
-          background-color:purple;
+        :focus-within
+        input::placeholder{
+          color:yellowgreen;
+        }
+        p::selection{
+          background-color: yellowgreen;
+        }
+        p::first-letter{
+          font-size:50px;
+        }
+        p{
+          color:var(--main-color);/*rgb oppacity transparency*/
+        }
+        a{
+          color:var(--main-color);
+          border:var(--defaultborder);
         }
         </style>
     </head>
     <body>
       <div>
-        <span>hello</span>
-        <p>
-          Lorem ipsum dolor
-          <span>inside</span>
-        </p>
-        <address>hi</address>
-        <span>1234</span>
-      </div>
-
-      <div>
+        <button>hello</button>
+        <input type="text">
+        <a href="https://apple.com">Go to apple</a>
         <form>
-          <input type="text" placeholder="firstname"/>
-          <input type="text" placeholder="lastname"/>
-          <input type="password" required placeholder="password"/>
-          
+          <input type="text"name=""id=""/>
+          <input type="text"name=""id=""/>
+          <input type="text"placeholder="input"name=""id=""/>
         </form>
+        
       </div>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos ut, quaerat ratione quibusdam molestiae laboriosam numquam, esse culpa reprehenderit exercitationem sint aspernatur aperiam assumenda! Earum harum quae quo qui delectus.
+      </p>
+      combinator 이 선택자 역할을 함. 조건 달아주는 선택자. 
+      <a href="#">website</a>
     </body>
 </html>
