@@ -1,82 +1,32 @@
 <!DOCTYPE html>
 <html lang="kr">
-    <!-- 여기에 들어가는 것은 모두 html 코드가 됨. head/body-->
     <head>
-        <title>home of my first website</title>
-        
-        <style> 
-        :root{/*출발점이고 기본이 됨. */
-          --main-color:#fcce00;/*변수 역할을 함.*/
-          /*형식은 --변수이름*/
-          --defaultborder:1px solid var(--main-color)
-          /*css custom property*/
-        }
-        body{
-          height:1000px;
-          margin:20px;
-        }
-        input:active{
-          /*클릭 순간*/
-        }
-        input:focus{
-          background-color: purple;
-        }
-        a:visited{
+      <style>
+        a{
+          color:wheat;
           background-color: tomato;
-        }
-        a:focus{
-          color:teal;
+          text-decoration: none;
+          padding:3px 5px;
+          border-radius: 5px;
+          font-size:50px;
+          /*transition:background-color 10s ease-in-out, color 5s ease-in-out;
+          */
+          transition: all 500ms cubic-bezier(0.785, 0.135, 0.150, 0.860);
+          transition: border-radius 1s cubic-bezier(0.785,0.135,0.150,0.860)
+          , color 1s ease-in-out;
+          /*cubic-bezier 은 자신만의 커브 가능*/
+          /*linear, ease-in, ease-out, ease-in-out,ease*/
         }
         a:hover{
-          color:teal;
+          /*transition:all 5s ease-in-out; 여기다 하면
+          대면 천천히, 떼면 1초*/
+          border-radius: 30px;
+          color:tomato;
+          background-color: wheat;
         }
-        form{
-          border: 1px solid salmon;
-          display:flex;
-          flex-direction: column;
-          padding:20px;
-        }
-        form:focus-within{/*자식이 focus 되면 영향을 받는 코드*/
-          border-color:seagreen;
-        }
-        form:hover input:focus{/*hover 상대가 되는 부모의 자식 input*/
-          background-color: white;
-        }
-        :focus-within
-        input::placeholder{
-          color:yellowgreen;
-        }
-        p::selection{
-          background-color: yellowgreen;
-        }
-        p::first-letter{
-          font-size:50px;
-        }
-        p{
-          color:var(--main-color);/*rgb oppacity transparency*/
-        }
-        a{
-          color:var(--main-color);
-          border:var(--defaultborder);
-        }
-        </style>
+      </style>
     </head>
     <body>
-      <div>
-        <button>hello</button>
-        <input type="text">
-        <a href="https://apple.com">Go to apple</a>
-        <form>
-          <input type="text"name=""id=""/>
-          <input type="text"name=""id=""/>
-          <input type="text"placeholder="input"name=""id=""/>
-        </form>
-        
-      </div>
-      <p>
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dignissimos ut, quaerat ratione quibusdam molestiae laboriosam numquam, esse culpa reprehenderit exercitationem sint aspernatur aperiam assumenda! Earum harum quae quo qui delectus.
-      </p>
-      combinator 이 선택자 역할을 함. 조건 달아주는 선택자. 
-      <a href="#">website</a>
+      <a href="#">go home</a>
     </body>
 </html>
