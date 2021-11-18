@@ -1,0 +1,45 @@
+.nav{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    background-color:gray;
+    padding:20px 40px;
+    width:100%;
+    box-sizing: border-box;
+    /*원래 padding left를 주면 box size+ padding이여서 오버가 되지만
+    이렇게 하면 원래 사이즈 유지됨 */
+}
+.nav__list{
+    display:flex;
+    justify-content: space-between;
+}
+.nav__link{
+    color:#2e363e;
+    position:relative;
+}
+.nav__notification{
+    background-color: red;
+    width: 20px;
+    height: 20px;
+    color:white;
+    border-radius: 50%;
+    
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    position:absolute;
+    left:15px;
+    bottom:15px;
+}
+.nav__alarm{
+    display:block;
+    width:10px;
+    height:10px;
+    background-color: red;
+    border-radius: 50%;
+    position:absolute;
+    bottom:20px;
+    left:20px;
+}
