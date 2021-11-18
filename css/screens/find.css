@@ -1,0 +1,107 @@
+.dot{
+    background-color: red;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    position:absolute;
+    bottom:10px;
+    left:10px;
+}
+.pos{
+    position:relative;
+}
+.find-icons{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom:25px;
+    
+}
+.find-icons__icon{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.find-icons__icon i{
+    font-size:35px;/*font size로 그림 크기도 가능.*/   
+    margin-bottom:10px;
+
+}
+.recommended-friends{
+    margin:25px 0px;
+    padding:25px 0px;
+    border-top:var(--main-border);
+
+    border-bottom:var(--main-border);
+}
+.recommended-friends__title{
+    font-size:14px;
+    color:var(--gray);
+}
+.recommended-friends span{
+    margin:100px 0px;
+    display:block;
+    text-align: center;
+    color:var(--gray);
+}
+.open-chats__header{
+    display:flex;
+    justify-content: space-between;
+    color:var(--gray);
+}
+.open-chats__box{
+    display:flex;
+    justify-content: space-between;
+    padding-bottom:20px;
+    padding-top:20px;
+    border-bottom:var(--main-border);
+    align-items: center;
+
+}
+.open-chats__text{
+    display:flex;
+    flex-direction: column;
+}
+.open-chats__data span:last-child{
+    color:red;
+}
+.open-chats__title{
+    font-weight: 600;
+    margin-bottom:5px;
+}
+.open-chats__data img{
+    width:15px;
+    height:15px;
+    border-radius: 50%;
+    margin-right:5px;
+}
+.open-chats__member-count{
+    color:var(--gray);
+}
+.open-chats__data .divider{
+    width:2px;
+    height:10px;
+    background-color: var(--gray);
+    margin:0px 5px;
+}
+.open-chats__data{
+    display:flex;
+    align-items: center;
+}
+.open-chats__pic{
+    position:relative;
+}
+.open-chats__pic img{
+    border-radius: 10px;
+}
+.open-chats__pic div{
+    position:absolute;
+    top:23px;
+    right:5px;
+    color:white;
+    display:flex;
+    font-size:10px;
+    background-color: rgba(0,0,0,1);
+    border-radius: 5px;
+    padding:3px;
+}
