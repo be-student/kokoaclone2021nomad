@@ -8,12 +8,18 @@
 @import "component/nav-bar.css";
 @import "component/screen-header.css";
 @import "component/user-component.css";
+@import "component/badge.css";
 /*screen*/
 
 @import "screens/login-form,welcome.css";
 @import "screens/friends.css";
+@import "screens/find.css";
 
 body{
     font-family:"Open Sans",sans-serif;
 }
 
+
+.main-screen{
+    padding:0px var(--horizontal-space);
+  }
