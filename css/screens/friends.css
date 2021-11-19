@@ -23,3 +23,32 @@
   margin-bottom:20px;
   color:rgba(0,0,0,0.5);
 }
+
+#splash-screen{
+  background-color: yellow;
+  position:absolute;
+  width:100vw;
+  height:100vh;
+  top:0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 128px;
+  animation:hideSplashScreen 0.3s ease-in-out forwards;
+  animation-delay:2s/*시작까지 2초 대기*/
+}
+
+@keyframes hideSplashScreen{/*
+  animation이 끝나면 다시 완벽하게 덮힘
+  forwards 추가함 단 완벽하게 사라지는 것은 아니고 투명도 0임
+  클릭이 안 되는 문제 visibility0 체크함. 이를 통해 가능
+  제거를 원하면 JS가 팔요함. */
+  from{
+    opacity:1;
+  }
+  to{
+    opacity:0;
+    visibility: hidden;
+  }
+}
+
