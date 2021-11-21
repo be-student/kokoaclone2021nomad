@@ -35,7 +35,7 @@
   align-items: center;
   font-size: 128px;
   animation:hideSplashScreen 0.3s ease-in-out forwards;
-  animation-delay:2s/*시작까지 2초 대기*/
+  animation-delay:0.5s/*시작까지 2초 대기*/
 }
 
 @keyframes hideSplashScreen{/*
